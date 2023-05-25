@@ -17,8 +17,7 @@ let unidadElegida = parseInt(prompt("Ingrese la unidad a la que desea convertir:
 
 const temperatura = parseFloat(prompt("Ingrese la temperatura a convertir: "));
 
-let resultado;
-
+// Dependiendo de la unidad elegida, imprimimos el mensaje correspondiente
 switch (unidadElegida) {
     case 1:
         console.log(`${temperatura} °F equivale a ${convertirFahrenheitACelsius(temperatura)} °C`);

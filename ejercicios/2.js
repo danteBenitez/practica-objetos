@@ -1,13 +1,12 @@
 // Funcion que toma un número como parámetro y devuelve true si éste es primo
 function esPrimo(numero) {
-    // Un número primo sólo si es mayor a 1 y es divisible solamente
+    // Un número es primo sólo si es mayor a 1 y es divisible solamente
     // por 1, por -1, por él mismo y por su opuesto
 
-    // Si el número es menor a 1, por nuestra definición no es primo
-    
-    if (numero < 1) return false;
-            // ^ Ya que el cuerpo del if sólo contiene una expresión,
-            // podemos obviar las llaves
+    // Si el número es menor o igual a 1, por nuestra definición no es primo
+    if (numero <= 1) return false;
+                    // ^ Ya que el cuerpo del if sólo contiene una instrucción,
+                    // podemos obviar las llaves
 
     // Como los primos deben ser mayores a uno, 
     // debemos comprobar que numero no tiene divisores

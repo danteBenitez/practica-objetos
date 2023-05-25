@@ -1,18 +1,10 @@
 function obtenerMaximo(arreglo) {
 
-    // Para retornar el número máximo, podemos utilizar .reduce.
-    // El acumulador será el número mayor encontrado hasta el momento,
-    // y cada iteración lo comparará con el elemento actual
-    return arreglo.reduce((maximo, num) => {
-        //Si el número es mayor al maximo, el maximo pasa a ser ese número,
-        // por lo que lo retornamos
-        if (num > maximo) {
-            return num;
-        } else {
-            // Si no, retornamos el maximo recibido
-            return maximo;
-        }
-    })
+    // Math.max es un método que retorna el mayor de todos los números
+    // que se le pasan como parámetros
+    // Podemos usar el spread operator para pasar los elementos del arreglo
+    // como parámetros diferentes a la función
+    return Math.max(...arreglo);
 }
 
 console.log(

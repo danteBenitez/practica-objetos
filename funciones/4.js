@@ -1,5 +1,4 @@
 function generarNumeroAleatorio() {
-    
     // El método Math.random() devuelve un número
     // aleatorio entre 0 y 1, excluyendo este último
     // Multiplicarlo por 10 resulta en un número entre 0 y 10,

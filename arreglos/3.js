@@ -12,7 +12,7 @@ function obtenerPromedioPonderado(arregloNotas, arregloPesos) {
     // Luego, debemos obtener la suma. Podemos utilizar el método .reduce.
     // Recibe un callback al que se le pasa un acumulador y cada elemento. 
     // El retorno se convierte en el acumulador que utilizará la siguiente iteración
-    // Para sumar cada elemento, el callback es el siguiente: 
+    // Para sumar cada elemento, el callback suma al acumulador el elemento
     const sumaPonderada = arregloNotas.reduce(
         (acumulador, notaPonderada) => acumulador + notaPonderada
     )
