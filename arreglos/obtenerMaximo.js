@@ -8,13 +8,5 @@ function obtenerMaximo(arreglo) {
 }
 
 console.log(
-    obtenerMaximo([
-        100,
-        67,
-        54,
-        31,
-        98,
-        1000,
-        10
-    ])
+    obtenerMaximo([100,67,54,31,98, 1000, 10])
 )

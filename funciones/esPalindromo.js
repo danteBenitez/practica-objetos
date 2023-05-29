@@ -12,4 +12,4 @@ function esPalindromo(cadena) {
 
 console.log(
     esPalindromo('radar')
-)
+) // true

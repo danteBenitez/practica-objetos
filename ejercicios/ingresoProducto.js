@@ -2,7 +2,7 @@
 // y los almacena en un arreglo.
 // Imprime el resultado del precio total en la consola,
 // llamando a calcularTotalCompra para calcularlo
-async function solicitarIngresodeProductos(precios) {
+function solicitarIngresodeProductos(precios) {
     for (;;) {
         const ingresoUsuario = prompt("Ingrese el precio de un producto o \"total\" para visualizar el precio total");
 
@@ -18,7 +18,7 @@ async function solicitarIngresodeProductos(precios) {
 // Función que calcula el total de compra a partir de un arreglo de precios
 // de productos.
 function calcularTotalDeCompra(productos) {
-    // Utilizamos el método reduce para acumular la suma de los precios
+    // Utilizamos el método reduce para acumular la suma de los precios:
     // el total de la compra en cada iteración es el primer parámetro,
     // y el segundo el precio en la posición correspondiente
     return productos.reduce((totalCompra, precio) => {
